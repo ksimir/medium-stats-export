@@ -1,0 +1,17 @@
+{
+  "name": "medium_stats_export",
+  "version": "1.0.0",
+  "main": "scraper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Samir Hammoudi",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@google-cloud/storage": "^3.0.2",
+    "puppeteer": "^1.18.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
