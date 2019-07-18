@@ -64,7 +64,7 @@ $ gcloud functions deploy GCStoSpanner --runtime go111 --trigger-bucket medium-s
 ## Cloud Scheduler
 You want to export stats from Medium on a regular basis, let's say once a day. To do so, GCP offers a product called [Cloud Scheduler](https://cloud.google.com/scheduler/docs/) that can trigger an HTTP endpoint at a defined schedule.
 
-In the following command, replace [URI] by the URL you got [here](#node.js-function)
+In the following command, replace [URI] by the URL you got [here](#nodejs-function)
 ```
 $ gcloud scheduler jobs create http medium-daily-export --schedule "0 8 * * *" --uri [URI] --http-method POST
 ```
