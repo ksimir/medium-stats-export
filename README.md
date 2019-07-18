@@ -1,7 +1,10 @@
-# Medium stats export
-This repo contains 2 functions:
-- [Node.js] Scraping function (using Puppeteer in headless mode) to automate login and export of medium stats to GCS (CSV format)
-- [Golang] Function that import the previously exported CSV to Cloud Spanner
+# Serverless Medium stats export
+This repo contains the code for 2 functions:
+- [Node.js 10] Scraping function (using Puppeteer in headless mode) to automate login and export of medium stats to GCS (CSV format)
+- [Golang 1.11] Function that import the previously exported CSV to Cloud Spanner
+
+Here is the architecture diagram of the serverless solution:
+<img src="./medium-stats-export-arch.png">
 
 # Deployment
 
